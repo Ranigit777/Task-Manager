@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task Manager with Progress Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Task Manager</h1>
+
+    <!-- Task Input -->
+    <div class="task-input">
+      <input type="text" id="taskInput" placeholder="Enter a task...">
+      <input type="date" id="dueDate">
+      <select id="priority">
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+      </select>
+      <button id="addTaskBtn">Add</button>
+    </div>
+
+    <!-- Filters -->
+    <div class="filters">
+      <input type="text" id="searchBox" placeholder="Search tasks...">
+      <select id="filterStatus">
+        <option value="all">All</option>
+        <option value="completed">Completed</option>
+        <option value="pending">Pending</option>
+      </select>
+    </div>
+
+    <!-- Task List -->
+    <ul id="taskList"></ul>
+
+    <!-- Progress -->
+    <div class="progress-container">
+      <progress id="progressBar" value="0" max="100"></progress>
+      <p id="progressText">0% completed</p>
+    </div>
+
+    <!-- Dark Mode -->
+    <button id="darkModeBtn">🌙 Toggle Dark Mode</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
